@@ -19,7 +19,7 @@ public class LancamentosVencidosJob implements Job {
 		JobDataMap jobDataMap = context.getJobDetail().getJobDataMap();
 		
 		Lancamentos lancamentos = (Lancamentos) jobDataMap.get("lancamentos");
-		List<Lancamento> lancamentosVencidos = lancamentos.todosVencidos();
+		List<Lancamento> lancamentosVencidos = lancamentos.todosVencidos(); //simula select em banco
 		
 		EnviadorEmail enviadorEmail = (EnviadorEmail) jobDataMap.get("enviadorEmail");
 		EnviadorSMS enviadorSms = (EnviadorSMS) jobDataMap.get("enviadorSms");

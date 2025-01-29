@@ -23,6 +23,7 @@ public class SMSListener implements Listener {
 		}
 		
 		// this.notificador.removerListener(this);
+		System.out.println("...sms enviado.");
     }
 
 }

@@ -23,6 +23,7 @@ public class EmailListener implements Listener {
 		}
 		
 		// this.notificador.removerListener(this);
+		System.out.println("...e-mail enviado.");
     }
 
 }
